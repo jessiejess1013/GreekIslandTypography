@@ -267,12 +267,6 @@
         margin-right: 20px;
     }
 
-    @media (max-width: 400px) {
-        h1 {
-            font-size: 4vw;
-        }
-    }
-
     p {
         color: whitesmoke;
         max-width: 20vw;
@@ -303,6 +297,41 @@
     #islands {
         fill: #ffffff;
     }
+
+
+  @media (max-width: 600px) {
+  h1 {
+    font-size: 3.2vw;
+  }
+
+  .subtitle {
+    font-size: 2.2vw;
+    line-height: 5vw;
+  }
+
+  #greece {
+    display: none;
+  }
+
+  svg {
+    display: block;
+    margin-top: 20%;
+    cursor: pointer;
+  }
+
+  p {
+    max-width: 50vw;
+    bottom: 20px;
+    left: 30px;
+    font-size: 2vw;
+    line-height: 120%;
+  }
+
+  #content-title {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+  }
 </style>
 
 <script>
