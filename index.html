@@ -234,6 +234,7 @@
     html {
         min-width: 100%;
         min-height: 100%;
+        font-size: calc(1em + 1vw);
     }
 
     body {
@@ -257,27 +258,27 @@
     h1 {
         margin-top: 15px;
         margin-left: 10px;
-        font-size: 2.5vw;
+        font-size: 1em;
     }
 
     .subtitle {
-        font-size: 1.5vw;
+        font-size: 0.5em;
     }
 
     #greece {
         width: 20vw;
-        margin-right: 20px;
+        margin-right: 2vw;
     }
 
     p {
         color: whitesmoke;
         width: 25vw;
-        bottom: 20px;
-        right: 30px;
+        bottom: 3vh;
+        right: 3vw;
         position: fixed;
         font-family: 'Roboto', sans-serif;
-        font-size: 1.2vw;
-        line-height: 120%;
+        font-size: 0.5em;
+        line-height: 1.2em;
         opacity: 0;
         padding: 20px;
         background-color: rgba(0, 8, 57, 0.5);
@@ -285,8 +286,8 @@
     }
 
     #content-title {
-        font-size: 1.5vw;
-        line-height: 2vw;
+        font-size: 1.2em;
+        line-height: 1.5em;
     }
 
     #svgparent {
@@ -308,15 +309,6 @@
     }
 
     @media (max-width: 900px) {
-        p {
-            font-size: 14px;
-        }
-
-        #content-title {
-            font-size: 16px;
-            line-height: 18px;
-        }
-
         #greece {
             width: 25vw;
         }
@@ -324,21 +316,16 @@
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 20px;
-            line-height: 22px;
-        }
-
-        .subtitle {
-            font-size: 14px;
-            line-height: 16px;
+            line-height: 1em;
         }
 
         p {
             width: 70vw;
+            padding: 0;
             background: none;
-            margin-bottom: 5px;
-            display: block;
-            position: center;
+            bottom: 10vw;
+            left: 15vw;
+            font-size: 0.6em;
         }
 
         #svgparent {
@@ -356,24 +343,9 @@
             flex-direction: column;
         }
 
-        h1 {
-            font-size: 16px;
-            line-height: 18px;
-        }
-
-        .subtitle {
-            font-size: 12px;
-            line-height: 14px;
-        }
-
         p {
-            font-size: 12px;
             width: 80vw;
-        }
-
-        #content-title {
-            font-size: 14px;
-            line-height: 16px;
+            left: 10vw;
         }
     }
 </style>
